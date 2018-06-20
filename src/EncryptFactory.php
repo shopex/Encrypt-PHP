@@ -2,6 +2,7 @@
 namespace Shopex\Encrypt;
 use Shopex\Encrypt\Adaptars\Swoole;
 use Shopex\Encrypt\Adaptars\RSA;
+use Shopex\Encrypt\Adaptars\RSAReverse;
 use RuntimeException;
 
 class EncryptFactory
@@ -18,6 +19,7 @@ class EncryptFactory
         $map = [
             'swoole' =>Swoole::class,
             'rsa' =>RSA::class,
+            'rsareverse' =>RSAReverse::class,
         ];
         $class = $map[$adaptar];
 
