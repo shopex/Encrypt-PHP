@@ -12,8 +12,10 @@ require_once("vendor/autoload.php");
 $encrypt = Shopex\Encrypt\EncryptFactory::make("swoole", []);
 $keyfile = "./public_key";
 $str = $encrypt->encrypt($keyfile, "abc");
+//$str == 1JH7VAB8fsBeIRKhtB2yUHoLU+I33aQWR9YvrakBA0Gv7rY/xalkVWBBAPpqPVJFjaWsr
 echo $str;
-$str = $encrypt->encrypt($keyfile, "abc");
-echo $str;
+$str2 = $encrypt->encrypt($keyfile, "abc");
+//$str2 == abc
+echo $str2;
 
 ```
