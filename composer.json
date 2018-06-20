@@ -1,5 +1,5 @@
 {
-    "name": "Shopex/Encrypt",
+    "name": "shopex/encrypt",
     "description": "An encrypt framework by shopex",
     "keywords": ["shopex", "encrypt", "decrypt"],
     "license": "MIT",
