@@ -13,4 +13,7 @@ $encrypt = Shopex\Encrypt\EncryptFactory::make("swoole", []);
 $keyfile = "./public_key";
 $str = $encrypt->encrypt($keyfile, "abc");
 echo $str;
+$str = $encrypt->encrypt($keyfile, "abc");
+echo $str;
+
 ```
