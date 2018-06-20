@@ -1,6 +1,7 @@
 <?php
 namespace Shopex\Encrypt;
 use Shopex\Encrypt\Adaptars\Swoole;
+use Shopex\Encrypt\Adaptars\RSA;
 use RuntimeException;
 
 class EncryptFactory
@@ -15,7 +16,8 @@ class EncryptFactory
     public static function getClass($adaptar)
     {
         $map = [
-            'swoole' =>Swoole::class
+            'swoole' =>Swoole::class,
+            'rsa' =>RSA::class,
         ];
         $class = $map[$adaptar];
 
